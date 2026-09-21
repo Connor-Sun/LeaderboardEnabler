@@ -8,12 +8,12 @@ import com.megacrit.cardcrawl.screens.GameOverScreen;
 import leaderboardenabler.LeaderboardEnabler;
 
 /**
- * 原版 GameOverScreen.canUploadLeaderboards() 的判定是：
+ * The original GameOverScreen.canUploadLeaderboards() check is:
  *   return !Settings.isModded && !Settings.isTrial && !Settings.seedSet;
  *
- * 本补丁把 isModded / seedSet 两项交给游戏内配置控制：
- *   - isTrial（试玩版）始终保留，不可绕过。
- *   - isModded / seedSet 是否绕过，取决于 Mods 菜单里的开关。
+ * This patch hands the isModded / seedSet checks over to the in-game config:
+ *   - isTrial (demo version) is always enforced and cannot be bypassed.
+ *   - Whether isModded / seedSet are bypassed depends on the toggles in the Mods menu.
  */
 public class GameOverScreenPatches {
 

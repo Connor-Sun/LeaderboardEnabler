@@ -16,7 +16,7 @@
         <SlayTheSpire.version>12-18-2022</SlayTheSpire.version>
         <ModTheSpire.version>3.30.3</ModTheSpire.version>
         <BaseMod.version>5.0.0</BaseMod.version>
-        <!-- 改成你自己的 Steam 库路径 -->
+        <!-- Change this to your own Steam library path -->
         <Steam.path>D:/Games/SteamLibrary/steamapps</Steam.path>
     </properties>
 
@@ -47,8 +47,9 @@
     <build>
         <finalName>LeaderboardEnabler</finalName>
         <plugins>
-            <!-- 必须开启 debug（生成 LocalVariableTable），否则 ModTheSpire 读不到
-                 补丁方法的参数名，会抛 "Unknown error acquiring parameter name" -->
+            <!-- debug must be enabled (generates the LocalVariableTable); otherwise ModTheSpire
+                 cannot read the patch method's parameter names and throws
+                 "Unknown error acquiring parameter name" -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -62,7 +63,7 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.4</version>
             </plugin>
-            <!-- 打包后自动把 jar 复制到游戏的 mods 目录 -->
+            <!-- After packaging, automatically copy the jar to the game's mods directory -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-antrun-plugin</artifactId>

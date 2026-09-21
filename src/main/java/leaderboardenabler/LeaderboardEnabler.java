@@ -11,13 +11,13 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 
 /**
- * Mod 入口：
- *  - initialize()：加载 SpireConfig 配置，并订阅 BaseMod。
- *  - receivePostInitialize()：等 libGDX / 字体就绪后，注册游戏内的配置面板。
+ * Mod entry point:
+ *  - initialize(): loads the SpireConfig settings and subscribes to BaseMod.
+ *  - receivePostInitialize(): registers the in-game config panel once libGDX / fonts are ready.
  *
- * 配置项（存到游戏 saves/ 目录，游戏内 Mods 菜单可改）：
- *  - bypassIsModded：允许“带 mod 对局”上传排行榜（默认 true）
- *  - bypassSeedSet ：允许“自定义种子对局”上传排行榜（默认 false）
+ * Settings (stored in the game's saves/ directory, editable in-game via the Mods menu):
+ *  - bypassIsModded: allow "modded runs" to upload to the leaderboard (default true)
+ *  - bypassSeedSet : allow "seeded runs" to upload to the leaderboard (default false)
  */
 @SpireInitializer
 public class LeaderboardEnabler implements PostInitializeSubscriber {

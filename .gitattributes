@@ -1,7 +1,7 @@
-# 统一文本行尾，避免 Windows 下 CRLF/LF 冲突
+# Normalize text line endings to avoid CRLF/LF issues on Windows
 * text=auto
 
-# 文本文件统一 LF
+# Text files use LF
 *.java text eol=lf
 *.json text eol=lf
 *.xml  text eol=lf
@@ -9,7 +9,7 @@
 *.yml  text eol=lf
 *.yaml text eol=lf
 
-# 二进制文件
+# Binary files
 *.png  binary
 *.jpg  binary
 *.jar  binary
