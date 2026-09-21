@@ -1,0 +1,11 @@
+{
+  "modid": "LeaderboardEnabler",
+  "name": "LeaderboardEnabler",
+  "author_list": ["Connor"],
+  "description": "Enables_leaderboard_uploads_with_mods._Configurable_in-game.",
+  "version": "1.0.0",
+  "sts_version": "12-18-2022",
+  "mts_version": "3.30.3",
+  "dependencies": ["basemod"],
+  "update_json": ""
+}
