@@ -73,7 +73,9 @@
                         <phase>package</phase>
                         <configuration>
                             <target>
+                                <mkdir dir="mod/content"/>
                                 <copy file="target/LeaderboardEnabler.jar" tofile="${Steam.path}/common/SlayTheSpire/mods/LeaderboardEnabler.jar"/>
+                                <copy file="target/LeaderboardEnabler.jar" tofile="mod/content/LeaderboardEnabler.jar"/>
                             </target>
                         </configuration>
                         <goals>

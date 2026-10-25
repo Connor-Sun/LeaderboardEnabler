@@ -21,3 +21,6 @@ Desktop.ini
 
 # --- Logs ---
 *.log
+
+# --- Workshop build output ---
+/mod/content/*.jar
